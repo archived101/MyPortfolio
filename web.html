@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Nicolas Fuentes Portfolio</title>
+    <style>
+        /* Reset & Base Styles */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Top Banner */
+        .top-banner {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            width: 100%;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        /* Navigation Menu */
+        nav {
+            background: #333;
+            padding: 10px 0;
+            position: sticky;
+            top: 60px;
+            z-index: 999;
+        }
+        nav ul {
+            list-style: none;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #1e90ff;
+        }
+
+        /* Main Content Sections */
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        /* Hero Section */
+        #hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #1e90ff, #0066cc);
+            color: white;
+            border-radius: 0;
+        }
+        #hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        #hero p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: white;
+            color: #1e90ff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Projects Section */
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        .project-item {
+            padding: 20px;
+            border-left: 4px solid #1e90ff;
+            background: #f9f9f9;
+        }
+        .project-item h3 {
+            margin-top: 0;
+            color: #1e90ff;
+        }
+
+        /* About & Skills Section */
+        #about {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
+        #about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1e90ff;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        .skill-tag {
+            background: #1e90ff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* Contact Section */
+        #contact form {
+            display: grid;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #contact input, #contact textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        #contact button {
+            background: #1e90ff;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        #contact button:hover {
+            background: #0066cc;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+            }
+            #about {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        Aaron Nicolas Fuentes Portfolio
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Hi, I'm Aaron Nicolas Fuentes</h1>
+        <p>17-Year-Old Future Engineer | TSA & STLP Participant | Tech Enthusiast</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-list">
+            <div class="project-item">
+                <h3>ARGUS</h3>
+                <p>A robot designed to assist with onsite police investigations, improving efficiency and safety in law enforcement operations.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="https://i.imgur.com/dAGEoS8.jpeg" alt="Aaron Nicolas Fuentes">
+            <div>
+                <p>I'm a 17-year-old upcoming high school senior with hands-on experience in <strong>JavaScript, Python, HTML, C++, and C#</strong>. I've actively participated in <strong>TSA (Technology Student Association)</strong> and <strong>STLP (Student Technology Leadership Program)</strong>, and have visited multiple engineering firms in Louisville, gaining real-world insights into the tech industry.</p>
+                <div class="skills">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">C++</span>
+                    <span class="skill-tag">C#</span>
+                    <span class="skill-tag">Robotics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/mwpodbgd" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Aaron Nicolas Fuentes. All rights reserved.
+    </footer>
+</body>
+</html>
